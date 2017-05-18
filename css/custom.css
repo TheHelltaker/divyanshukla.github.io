@@ -1,0 +1,94 @@
+body{
+    background-color: #f1f1f1;
+}
+
+.intro-text{
+    margin-top: 15%;
+/*    margin-left: 10%;*/
+    text-align: center;
+}
+
+.intro-header{
+    display: none;
+/*    position: fixed;*/
+}
+
+.intro-body{
+    display: none;
+/*    position: relative;*/
+/*    top: 10%;*/
+}
+
+h1, h2, h3, h4{
+    font-family: 'Slabo 27px', serif;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h4{
+    font-size: 1em;
+    font-weight: 100;
+    text-align: left;
+    margin-top: -1%;
+    margin-bottom: 4%;
+}
+
+
+table{
+/*    position: fixed;*/
+/*    width: 95% !important;*/
+/*    top: 30% !important;*/
+/*    margin-left: 2.5% !important;*/
+/*    margin: 2.5%*/
+    color: #54626a !important;
+}
+
+th{
+    color: #54626a !important;
+    font-weight: 100 !important;
+}
+
+#git-id{
+    display: inline;
+    font-weight: bold;
+}
+
+.github{
+    width: 90%;
+    margin-left: 5% !important;
+    top: 35%;
+    position: fixed !important;
+    overflow-y: scroll !important;
+    padding: 0 !important;
+}
+
+#avi{
+    width: 25px;
+    border-radius: 5px;
+}
+
+.icon{
+    color: #597483;
+}
+
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+tr:hover{
+    background-color: rgba(211,211,211, 0.2);
+}
+
+.table-heading{
+    background-color: rgba(176,226,255, 0.2) !important;
+    border: 1px solid rgba(176,226,255, 0.8) !important;
+}
+
+@media (max-width: 800px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+}
