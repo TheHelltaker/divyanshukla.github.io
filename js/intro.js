@@ -2,11 +2,11 @@ $(document).ready(function () {
     
     $(".intro-header").transition({
         animation : 'fade down',
-        duration  : 500,
+        duration  : 1000,
         onComplete : function() {
           $(".intro-body").transition({
             animation : 'fade up',
-            duration  : 500,
+            duration  : 1000,
           });
         }
     });
@@ -65,7 +65,7 @@ function openReadMe(partialName){
             
             $('#readme-segment').transition({
                 animation : 'fade',
-                duration  : 500,
+                duration  : 700,
             });
             
         }
@@ -97,7 +97,7 @@ function collapseToHome(folder){
     $("#table-home").css("cssText", "display: none !important;");
     $('#table-home').transition({
         animation : 'fade down',
-        duration  : 500,
+        duration  : 700,
         onComplete : function() {   
             $('#table-home').css("position", "fixed");
             $('#table-home').css("top", "40%");
