@@ -115,10 +115,10 @@ thead.table-heading{
 }
 
 .page-content{
-    height: 390px;
+    height: 440px;
     overflow-x: hidden;
     overflow-y: auto !important;
-    margin: 5%;
+    margin: 3%;
 }
 
 #readme-page-content{

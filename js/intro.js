@@ -85,6 +85,10 @@ function collapseToHome(folder){
         $('#f-slash').css("display", "none");
     }
     
+    else{
+        var folder = $("#folder").html();
+    }
+    
     $("#folder-path").css("display", "none");
     
     var path = "partials/" + folder + ".html"
