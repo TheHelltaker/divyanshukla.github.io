@@ -20,11 +20,15 @@ body{
 }
 
 h1, h2, h3, h4{
-    font-family: 'Slabo 27px', serif;
+/*    font-family: 'Slabo 27px', serif;*/
+/*    font-family: 'Roboto Mono', monospace;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h2{
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: lighter;
+    
 }
 
 h4{
@@ -33,6 +37,7 @@ h4{
     text-align: left;
     margin-top: -1%;
     margin-bottom: 4%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 
@@ -43,6 +48,7 @@ table{
 /*    margin-left: 2.5% !important;*/
 /*    margin: 2.5%*/
     color: #54626a !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 th{
@@ -52,7 +58,8 @@ th{
 
 #git-id{
     display: inline;
-    font-weight: bold;
+    font-weight: 600;
+    color: black;
 }
 
 .github{
