@@ -2,7 +2,7 @@ $(document).ready(function () {
     
     $(".intro-header").transition({
         animation : 'fade down',
-        duration  : 1500,
+        duration  : 1100,
         onComplete : function() {
           $(".intro-body").transition({
             animation : 'fade up',
@@ -14,6 +14,9 @@ $(document).ready(function () {
 });
 
 function openFolder(folder){
+    
+    $("#readme-segment").css("cssText", "display: none !important;");
+    $("#readme-content").css("cssText", "display: none !important;");
     
     $('#f-slash').css("display", "inline");
     
@@ -32,7 +35,7 @@ function openFolder(folder){
 
 function openReadMe(partialName){
 
-
+//    debugger;
     var pathNames = {
         'readme': 'README.md',
         'dart': 'dart',
@@ -45,37 +48,39 @@ function openReadMe(partialName){
     
     
     $('.intro-text').transition('fade');
-    $("#table-body").css("cssText", "display: none !important;");
     
+    $("#table-body").css("cssText", "display: none !important;");    
     $("#table-home").css("cssText", "display: none !important;");
     $('#table-home').css("top", "15%");
     $("#folder-path").css("display", "inline");
     $("#project").html(pathNames[partialName]);
     
-    
     $('#table-home').transition({
         animation : 'fade up',
         duration  : 500,
         onComplete : function() {            
-            
-            $('#readme-content').load("partials/projects/" + partialName + ".html");
+                        
             $('#readme-content').css("top", "25%");
+            $('#readme-content').load("partials/projects/" + partialName + ".html");
+            $("#readme-content").css("display", "inline");
+            
             
             $('#readme-segment').transition({
                 animation : 'fade',
-                duration  : 700,
+                duration  : 700
             });
             
         }
     });
-    
-        
+           
 }
 
 function collapseToHome(folder){
     
     $('.intro-text').transition('fade');
+    $("#readme-content").html("");
     $("#readme-segment").css("cssText", "display: none !important;");
+    
     
     if(folder == 'parent'){
         $("#folder").html(""); 
