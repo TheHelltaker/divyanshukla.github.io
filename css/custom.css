@@ -4,24 +4,19 @@ body{
 
 .intro-text{
     margin-top: 15%;
-/*    margin-left: 10%;*/
     text-align: center;
 }
 
 .intro-header{
     display: none;
-/*    position: fixed;*/
 }
 
 .intro-body{
     display: none;
-/*    position: relative;*/
-/*    top: 10%;*/
 }
 
 h1, h2, h3, h4{
 /*    font-family: 'Slabo 27px', serif;*/
-/*    font-family: 'Roboto Mono', monospace;*/
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -42,11 +37,6 @@ h4{
 
 
 table{
-/*    position: fixed;*/
-/*    width: 95% !important;*/
-/*    top: 30% !important;*/
-/*    margin-left: 2.5% !important;*/
-/*    margin: 2.5%*/
     color: #54626a !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -65,7 +55,7 @@ th{
 .github{
     width: 90%;
     margin-left: 5% !important;
-    top: 35%;
+    top: 40%;
     position: fixed !important;
     overflow-y: scroll !important;
     padding: 0 !important;
@@ -90,9 +80,13 @@ tr:hover{
     background-color: rgba(211,211,211, 0.2);
 }
 
-.table-heading{
+thead.table-heading{
     background-color: rgba(176,226,255, 0.2) !important;
     border: 1px solid rgba(176,226,255, 0.8) !important;
+}
+
+#back{
+    padding-left: 2.5%;
 }
 
 @media (max-width: 800px) {

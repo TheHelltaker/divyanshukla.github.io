@@ -1,35 +1,44 @@
-<table class="ui single line table">
+<table class="ui single line table" id="github-header">
     <thead class="table-heading">
-        <tr >
+        <tr>
             <th colspan="2">
               <img id="avi" class="ui mini right spaced image" src="me.jpg"><p id="git-id">drmohan</p>
             </th>
             <th class="right aligned collapsing">Latest commit db52c7d on May 17, 2017</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="table-body">
         <tr>
-          <td class="collapsing" colspan="3" id="back">
-              <a onclick="openFolder('parent')">..</a>
+          <td class="collapsing">
+            <i class="folder icon"></i><a onclick="openFolder('dev')">development</a>
           </td>
+          <td>Initial commit</td>
+          <td class="right aligned collapsing">10 hours ago</td>
         </tr>
         <tr>
           <td class="collapsing">
-              <i class="file text outline icon"></i><a href="#">heartRateAnalytics</a>
+              <i class="folder icon"></i><a onclick="openFolder('design')">design</a>
           </td>
           <td>Initial commit</td>
           <td class="right aligned">10 hours ago</td>
         </tr>
         <tr>
           <td class="collapsing">
-              <i class="file text outline icon"></i><a href="#">creamery</a>
+              <i class="folder icon"></i><a onclick="openFolder('usability')">usability</a>
           </td>
           <td>Initial commit</td>
           <td class="right aligned">10 hours ago</td>
         </tr>
         <tr>
           <td class="collapsing">
-              <i class="file text outline icon"></i><a href="#">dart</a>
+              <i class="file text outline icon"></i><a href="resume.pdf" target="_blank">resume.pdf</a>
+          </td>
+          <td>Initial commit</td>
+          <td class="right aligned">10 hours ago</td>
+        </tr>
+        <tr>
+          <td class="collapsing">
+              <i class="file text outline icon"></i><a onclick="openReadMe()">README.md</a>
           </td>
           <td>Initial commit</td>
           <td class="right aligned">10 hours ago</td>

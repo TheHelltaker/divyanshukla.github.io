@@ -17,6 +17,12 @@
       crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
     <script src="js/intro.js"></script>
+    
+    <script>
+	       $(function(){
+	         $("#table-home").load("partials/parent.html"); 
+	       });
+	</script>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,75 +32,25 @@
 </head>
 <body>
 
-<div id="github-home">
     <div class="ui grid">
 
         <div class="four wide column"></div>
         <div class="eight wide column">
             <div class="intro-text">
                 <h2 class="intro-header" >Hello! 👋🏽</h2>
-                <h4 class="intro-body">My name's Divya, I'm an incoming senior at Carnegie Mellon studying Information Systems and HCI. I'm spending this summer interning at <a href="https://slack.com/">Slack</a> as a front end engineer. Take a look around and feel free to hire me full time. </h4>
+                <h4 class="intro-body">My name's Divya, I'm an incoming senior at Carnegie Mellon studying Information Systems and HCI. I'm spending this summer interning at <a href="https://slack.com/" target="_blank">Slack</a> as a front end engineer. Take a look around and feel free to hire me full time. </h4>
             </div>
         </div>
         <div class="four wide column"></div>
 
-
         <div class="sixteen wide column">
             <div class="ui raised segment github" id="table-home">
-                <table class="ui single line table">
-                    <thead class="table-heading">
-                        <tr >
-                            <th colspan="2">
-                              <img id="avi" class="ui mini right spaced image" src="me.jpg"><p id="git-id">drmohan</p>
-                            </th>
-                            <th class="right aligned collapsing">Latest commit db52c7d on May 17, 2017</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td class="collapsing">
-                        <i class="folder icon"></i><a class="folder-link" onclick="openFolder('dev')">development</a>
-                      </td>
-                      <td>Initial commit</td>
-                      <td class="right aligned collapsing">10 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td class="collapsing">
-                          <i class="folder icon"></i><a class="folder-link" onclick="openFolder('design')">design</a>
-                      </td>
-                      <td>Initial commit</td>
-                      <td class="right aligned">10 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td class="collapsing">
-                          <i class="folder icon"></i><a class="folder-link" onclick="openFolder('usability')">usability</a>
-                      </td>
-                      <td>Initial commit</td>
-                      <td class="right aligned">10 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td class="collapsing">
-                          <i class="file text outline icon"></i><a href="resume.pdf" target="_blank">resume.pdf</a>
-                      </td>
-                      <td>Initial commit</td>
-                      <td class="right aligned">10 hours ago</td>
-                    </tr>
-                    <tr>
-                      <td class="collapsing">
-                          <i class="file text outline icon"></i><a class="folder-link" onclick="openFolder('dev')">README.md</a>
-                      </td>
-                      <td>Initial commit</td>
-                      <td class="right aligned">10 hours ago</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <!-- partials/parent.html -->
             </div>
         </div>
 
     </div>
-</div>
     
-
     
     <script>
       document.addEventListener("DOMContentLoaded", function(){
