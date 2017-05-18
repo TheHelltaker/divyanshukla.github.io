@@ -89,6 +89,17 @@ thead.table-heading{
     padding-left: 2.5%;
 }
 
+#folder-path{
+    position: fixed !important;
+    margin-left: 5%;
+    top: 10%;
+    display: none;
+}
+
+#home-path{
+    
+}
+
 @media (max-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
 
