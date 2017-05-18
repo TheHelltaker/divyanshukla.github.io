@@ -23,6 +23,7 @@ function openReadMe(){
     
     $("#table-home").css("cssText", "display: none !important;");
     $('#table-home').css("top", "15%");
+    $("#folder-path").css("display", "inline");
     
     $('#table-home').transition({
         animation : 'fade up',
@@ -30,23 +31,25 @@ function openReadMe(){
         onComplete : function() {            
             $('#table-home').css("position", "relative");
             
-            var rm = document.createElement("div");
-            rm.id = "readMe";
-            $('.github').append(rm);
-            $("#readMe").load("partials/readme.html");
+            $('#readme-content').load("partials/readme.html");
+            $('#readme-content').css("top", "25%");
             
-            $("#folder-path").css("display", "inline");
+            $('#readme-segment').transition({
+                animation : 'fade',
+                duration  : 1000,
+            });
+            
         }
     });
     
-    $('#table-body').css("display", "none")
-    
+    $("#table-body").css("cssText", "display: none !important;");
+        
 }
 
 function collapseToHome(folder){
     
     $('.intro-text').transition('fade');
-    $('#readMe').css("display", "none");
+    $("#readme-segment").css("cssText", "display: none !important;");
     $("#folder-path").css("display", "none");
     
     var path = "partials/" + folder + ".html"

@@ -80,10 +80,12 @@ tr:hover{
     background-color: rgba(211,211,211, 0.2);
 }
 
+/*
 thead.table-heading{
     background-color: rgba(176,226,255, 0.2) !important;
     border: 1px solid rgba(176,226,255, 0.8) !important;
 }
+*/
 
 #back{
     padding-left: 2.5%;
@@ -96,10 +98,20 @@ thead.table-heading{
     display: none;
 }
 
-#home-path{
-    
+#readme-segment{
+    display: none;
 }
 
+.home-path{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.project-path{
+    font-size: 1.25em;
+    line-height: 2em;
+    color: black;
+}
 @media (max-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
 
