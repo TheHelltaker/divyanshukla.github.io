@@ -2,7 +2,7 @@ $(document).ready(function () {
     
     $(".intro-header").transition({
         animation : 'fade down',
-        duration  : 1000,
+        duration  : 1500,
         onComplete : function() {
           $(".intro-body").transition({
             animation : 'fade up',
