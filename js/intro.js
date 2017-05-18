@@ -45,6 +45,7 @@ function openReadMe(partialName){
     
     
     $('.intro-text').transition('fade');
+    $("#table-body").css("cssText", "display: none !important;");
     
     $("#table-home").css("cssText", "display: none !important;");
     $('#table-home').css("top", "15%");
@@ -56,9 +57,6 @@ function openReadMe(partialName){
         animation : 'fade up',
         duration  : 500,
         onComplete : function() {            
-
-//            $('#readme-content').css("cssText", "position: relative !important;");
-             
             
             $('#readme-content').load("partials/projects/" + partialName + ".html");
             $('#readme-content').css("top", "25%");
@@ -71,7 +69,6 @@ function openReadMe(partialName){
         }
     });
     
-    $("#table-body").css("cssText", "display: none !important;");
         
 }
 
