@@ -29,10 +29,11 @@ function openReadMe(){
         animation : 'fade up',
         duration  : 1000,
         onComplete : function() {            
-            $('#table-home').css("position", "relative");
-            
+
+            $('#readme-content').css("cssText", "position: relative !important;");
+             
             $('#readme-content').load("partials/readme.html");
-            $('#readme-content').css("top", "25%");
+            $('#readme-content').css("top", "15%");
             
             $('#readme-segment').transition({
                 animation : 'fade',
