@@ -66,7 +66,7 @@ function openReadMe(partialName){
             
             
             $('#readme-segment').transition({
-                animation : 'fade down',
+                animation : 'fade',
                 duration  : 1000
             });
             
