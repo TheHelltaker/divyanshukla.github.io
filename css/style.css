@@ -16,8 +16,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #ddd;
+    padding: 2rem;
+    border-bottom: 1px solid;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 header nav ul {
@@ -31,15 +36,15 @@ header nav ul li {
     margin-left: 20px;
 }
 
-a {
-    text-decoration: none;
+main {
+    padding: 2rem 0;
 }
 
 footer {
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid;
 }
 
 footer ul {
@@ -53,27 +58,72 @@ footer ul li {
     margin: 0 10px;
 }
 
-/* Light Theme */
+/* Light Theme (Clouds) */
 body {
-    background-color: #f0f8ff;
+    background-color: #f0f8ff; /* AliceBlue */
     color: #333;
 }
 
 a {
-    color: #007bff;
+    color: #007bff; /* Blue */
 }
 
-/* Dark Theme */
+header, footer {
+    border-color: #d4eaff;
+}
+
+/* Dark Theme (Sunset) */
 body.dark-theme {
     background-color: #222;
     color: #eee;
 }
 
 body.dark-theme a {
-    color: #ff8c00;
+    color: #ff8c00; /* DarkOrange */
 }
 
 body.dark-theme header,
 body.dark-theme footer {
     border-color: #444;
+}
+
+#theme-switcher {
+    background: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+body.dark-theme #theme-switcher {
+    color: #eee;
+    border-color: #eee;
+}
+
+body:not(.dark-theme) #theme-switcher {
+    color: #333;
+    border-color: #333;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding-right: 2rem;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 1rem;
+}
+
+main {
+    flex: 1;
 }
