@@ -1,8 +1,9 @@
-
+/* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0;
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -12,16 +13,17 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: right;
 }
 
 header nav ul li {
@@ -29,34 +31,49 @@ header nav ul li {
     margin-left: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
+a {
     text-decoration: none;
 }
 
-section {
-    padding: 4rem 0;
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
 }
 
-#about {
-    background: #f4f4f4;
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-#projects {
-    background: #fff;
+footer ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-#contact {
-    background: #f4f4f4;
+/* Light Theme */
+body {
+    background-color: #f0f8ff;
+    color: #333;
 }
 
-#project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+a {
+    color: #007bff;
 }
 
-.project {
-    border: 1px solid #ddd;
-    padding: 20px;
+/* Dark Theme */
+body.dark-theme {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-theme a {
+    color: #ff8c00;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    border-color: #444;
 }
